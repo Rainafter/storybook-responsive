@@ -60,4 +60,5 @@ export const TextInputHalfWrapper = styled.div`
   display: block;
   position: relative;
   width: 47%;
+  overflow: hidden;
 `;

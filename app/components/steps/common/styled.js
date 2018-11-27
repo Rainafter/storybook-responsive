@@ -48,7 +48,7 @@ export const StyledHeadline = styled.div`
   font-family: Azo-Sans-Bold;
   color: ${lightBlue};
   padding: 4px 20px 12px 0;
-  margin: 0 auto;
+  margin: 0 20px;
   font-size: 16px;
   @media ${device.tabletP} {
     font-size: 20px;
