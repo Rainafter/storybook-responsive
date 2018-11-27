@@ -4,8 +4,8 @@ import { device } from '../../../utils/styleHelper';
 export const FlexInputsWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 0 20px;
+  justify-content: space-between;
+  margin: 0 20px 0 0;
   @media ${device.tabletP} {
     margin: 0;
   }

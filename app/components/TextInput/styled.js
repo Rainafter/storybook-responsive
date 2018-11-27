@@ -60,5 +60,12 @@ export const TextInputHalfWrapper = styled.div`
   display: block;
   position: relative;
   width: 47%;
-  overflow: hidden;
+  ${'' /* overflow: hidden; */}
+  @media ${device.tabletP} {
+    width: 182px;
+    margin: 0 10px 0 0;
+  }
+  @media ${device.laptop} {
+    width: 235px;
+  }
 `;

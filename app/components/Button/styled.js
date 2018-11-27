@@ -21,9 +21,12 @@ export const StyledButton = styled.button`
   @media ${device.tabletP} {
     font-size: 20px;
     min-width: 149px;
-    margin: 0 0;
+    margin: 0;
     height: 50px;
     font-size: 16px;
+  }
+  @media ${device.tabletL} {
+    margin: 0 0 0 10px;
   }
   @media ${device.laptop} {
     font-size: 20px;

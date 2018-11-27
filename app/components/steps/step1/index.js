@@ -44,6 +44,9 @@ class Step1 extends Component {
   onNext(e) {
     const { checked } = this.state;
     e.preventDefault();
+    this.setState({
+      isDirty: true,
+    });
     if (isValidEmail(this.state.email) && checked) {
       this.props.onSetCurrentStep(2);
       this.props.onSetEmail(this.state.email);

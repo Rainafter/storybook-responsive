@@ -4,7 +4,7 @@ const size = {
   mobileL: '425px',
   tabletP: '768px',
   tabletL: '1027px',
-  laptop: '1044px',
+  laptop: '1440px',
   desktop: '2560px',
 };
 
@@ -22,5 +22,5 @@ export const device = {
 
 export const offset = {
   tabletL: -240,
-  laptop: -350,
+  laptop: -320,
 };

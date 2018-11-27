@@ -55,6 +55,7 @@ export const StyledHeadline = styled.div`
     padding: 4px 20px 12px 0;
   }
   @media ${device.tabletL} {
+    margin: 0;
   }
   @media ${device.laptop} {
     font-size: 24px;
