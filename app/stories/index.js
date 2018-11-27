@@ -9,6 +9,14 @@ import Button from '../components/Button';
 import Step1 from '../components/steps/step1';
 import Step2 from '../components/steps/step2';
 import Step3 from '../components/steps/step3';
+
+import TextInput from '../components/TextInput';
+
+import {
+  StyledInputLineWrapper,
+  FlexWrapper,
+} from '../components/steps/common/styled';
+import { FlexInputsWrapper } from '../components/steps/step2/styled';
 import { StyledFooterWrapper, StyledContent } from '../components/Footer/styled';
 import GlobalStyle from '../global-styles';
 
@@ -160,6 +168,95 @@ storiesOf('States - Success', module)
         </StyledContent>
       </StyledFooterWrapper>
     </div>
+  ));
+
+storiesOf('TextInput', module)
+  .add('Email Valid', () => (
+    <StyledInputLineWrapper>
+      <FlexWrapper>
+        <TextInput
+          type="email"
+          name="email"
+          placeholder="enter email address"
+          onChange={action('onChange')}
+        />
+      </FlexWrapper>
+    </StyledInputLineWrapper>
+  ))
+  .add('Email Invalid', () => (
+    <StyledInputLineWrapper>
+      <FlexWrapper>
+        <TextInput
+          type="email"
+          name="email"
+          placeholder="enter email address"
+          isDirty
+          value="ssssss"
+          onChange={action('onChange')}
+          // onChange={action('onChange', e => e.target.value)}
+        />
+      </FlexWrapper>
+    </StyledInputLineWrapper>
+  ))
+  .add('Name Valid', () => (
+    <StyledInputLineWrapper>
+      <FlexWrapper>
+        <FlexInputsWrapper>
+          <TextInput
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            value="Chloe"
+            onChange={action('onChange')}
+            layout="half"
+            isRequired
+            isFirstNameDirty
+            isLastNameDirty
+          />
+          <TextInput
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            value="Guo"
+            onChange={action('onChange')}
+            layout="half"
+            isRequired
+            isFirstNameDirty
+            isLastNameDirty
+          />
+        </FlexInputsWrapper>
+      </FlexWrapper>
+    </StyledInputLineWrapper>
+  ))
+  .add('Name Invalid', () => (
+    <StyledInputLineWrapper>
+      <FlexWrapper>
+        <FlexInputsWrapper>
+          <TextInput
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            value=""
+            onChange={action('onChange')}
+            layout="half"
+            isRequired
+            isFirstNameDirty
+            isLastNameDirty
+          />
+          <TextInput
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            value="Guo"
+            onChange={action('onChange')}
+            layout="half"
+            isRequired
+            isFirstNameDirty
+            isLastNameDirty
+          />
+        </FlexInputsWrapper>
+      </FlexWrapper>
+    </StyledInputLineWrapper>
   ));
 
 storiesOf('Button', module)

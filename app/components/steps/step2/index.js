@@ -57,7 +57,7 @@ class Step2 extends Component {
   }
 
   render() {
-    const { title, headline, defaultFullName, defaultClick } = this.props;
+    const { title, headline, defaultFullName } = this.props;
     const { firstName, lastName, isFirstNameDirty, isLastNameDirty } = this.state;
     return (
       <div>
@@ -71,7 +71,7 @@ class Step2 extends Component {
                 name="firstName"
                 placeholder="First Name"
                 value={(!!defaultFullName && defaultFullName.firstName) || firstName}
-                onChange={() => this.onInputChange(defaultClick)}
+                onChange={this.onInputChange}
                 layout="half"
                 isRequired
                 isFirstNameDirty={isFirstNameDirty}
@@ -82,7 +82,7 @@ class Step2 extends Component {
                 name="lastName"
                 placeholder="Last Name"
                 value={(!!defaultFullName && defaultFullName.lastName) || lastName}
-                onChange={() => this.onInputChange(defaultClick)}
+                onChange={this.onInputChange}
                 layout="half"
                 isRequired
                 isFirstNameDirty={isFirstNameDirty}
