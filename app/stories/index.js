@@ -10,7 +10,7 @@ import Step1 from '../components/steps/step1';
 import Step2 from '../components/steps/step2';
 import Step3 from '../components/steps/step3';
 import { StyledFooterWrapper, StyledContent } from '../components/Footer/styled';
-// import GlobalStyle from '../global-styles';
+import GlobalStyle from '../global-styles';
 
 const step1 = {
   headline1: 'SIGN UP FOR',
@@ -33,7 +33,7 @@ const step3 = {
 storiesOf('Interactive Steps', module)
   .add('Step1', () => (
     <div>
-      {/* <GlobalStyle /> */}
+      <GlobalStyle />
       <StyledFooterWrapper>
         <StyledContent>
           <Step1
@@ -47,7 +47,7 @@ storiesOf('Interactive Steps', module)
   ))
   .add('Step2', () => (
     <div>
-      {/* <GlobalStyle /> */}
+      <GlobalStyle />
       <StyledFooterWrapper>
         <StyledContent>
           <Step2
@@ -61,7 +61,7 @@ storiesOf('Interactive Steps', module)
   ))
   .add('Step3', () => (
     <div>
-      {/* <GlobalStyle /> */}
+      <GlobalStyle />
       <StyledFooterWrapper>
         <StyledContent>
           <Step3
@@ -77,7 +77,7 @@ storiesOf('Interactive Steps', module)
 storiesOf('States - Email Collection', module)
   .add('Default Valid Email', () => (
     <div>
-      {/* <GlobalStyle /> */}
+      <GlobalStyle />
       <StyledFooterWrapper>
         <StyledContent>
           <Step1
@@ -94,6 +94,7 @@ storiesOf('States - Email Collection', module)
   ))
   .add('Invalid Email', () => (
     <div>
+      <GlobalStyle />
       <StyledFooterWrapper>
         <StyledContent>
           <Step1
@@ -111,6 +112,7 @@ storiesOf('States - Email Collection', module)
   ))
   .add('Empty Email', () => (
     <div>
+      <GlobalStyle />
       <StyledFooterWrapper>
         <StyledContent>
           <Step1
@@ -130,6 +132,7 @@ storiesOf('States - Email Collection', module)
 storiesOf('States - Name Collection', module)
   .add('Default Valid Name', () => (
     <div>
+      <GlobalStyle />
       <StyledFooterWrapper>
         <StyledContent>
           <Step2
@@ -146,6 +149,7 @@ storiesOf('States - Name Collection', module)
 storiesOf('States - Success', module)
   .add('Success', () => (
     <div>
+      <GlobalStyle />
       <StyledFooterWrapper>
         <StyledContent>
           <Step3
