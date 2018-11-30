@@ -7,11 +7,6 @@ import { isValidEmail } from '../../utils/helpers';
 
 const TextInput = (props) => {
   const { type, name, value, onChange, placeholder, layout, isRequired, isDirty, isFirstNameDirty, isLastNameDirty } = props;
-  console.log('~~~~~~~~~~>_.isEmpty(value)', _.isEmpty(value));
-  console.log('~~~~~~~~~~>!!isFirstNameDirty || !!isLastNameDirty', !!isFirstNameDirty || !!isLastNameDirty);
-  console.log('~~~~~~~~~~>isRequired', isRequired);
-
-  console.log('~~~~~~~~~~>(!!isFirstNameDirty || !!isLastNameDirty) && isRequired && _.isEmpty(value)', (!!isFirstNameDirty || !!isLastNameDirty) && isRequired && _.isEmpty(value));
   if (layout !== 'half') {
     return (
       <TextInputWrapper>
