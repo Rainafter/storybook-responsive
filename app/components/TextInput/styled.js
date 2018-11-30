@@ -37,13 +37,11 @@ export const StyledInputHalf = styled.input`
   width: 100%;
   @media ${device.tabletP} {
     font-size: 24px;
-    margin: 0 20px 0 0;
-    width: 182px;
+    width: 162px;
     height: 45px;
   }
   @media ${device.laptop} {
-    margin: 0 20px 0 0;
-    width: 235px;
+    width: 215px;
   }
 `;
 
